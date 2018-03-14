@@ -1,5 +1,7 @@
 package org.qywx.sdk.agent.object;
 
+import com.alibaba.fastjson.JSON;
+
 /**
  * 企业应用列表对象
  * @author Rocye
@@ -32,6 +34,11 @@ public class MinAgent {
 	}
 	public void setSquare_logo_url(String square_logo_url) {
 		this.square_logo_url = square_logo_url;
+	}
+
+	@Override
+	public String toString() {
+		return JSON.toJSONString(this);
 	}
 
 }
